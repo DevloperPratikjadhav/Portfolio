@@ -9,6 +9,7 @@
 .navbar {
     background-color: black;
     height: 60px;
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -90,13 +91,17 @@ ul.header {
 }
 
 .card {
+   
     width: 300px;
     height: 400px;
     position: relative;
     left: 10%;
-    background-color: bisque;
+    background-image: url(Assets/1693235940616.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
     border-radius: 20px;
-    box-shadow: 0px 10px 10px 0.5px red;
+    box-shadow: 0px 10px 10px 0.5px rgb(129, 128, 128);
 }
 
 .p-info {
@@ -133,13 +138,13 @@ ul.header {
 /*Skills and ability*/
 .skills {
     width: 98.5%;
-    height: 950px;
+    height: 650px;
     padding: 10px;
     background: linear-gradient(to bottom, #57059e, #4a00e0);
 }
 
 .skill {
-    z-index: 10;
+   
     margin-left: 10%;
     margin-top: 5%;
     padding: 20px;
@@ -158,7 +163,7 @@ ul.header {
 }
 
 .box {
-    z-index: 10;
+   
     width: 200px;
     height: 200px;
     margin-top: 10px;
