@@ -7,8 +7,8 @@
 
 /*Header*/
 .navbar {
-    background-color: black;
-    height: 60px;
+    background-color: rgb(242, 242, 242);
+    height: 65px;
     width: 100%;
     position: sticky;
     top: 0;
@@ -23,19 +23,20 @@
 
 ul.header {
     list-style: none;
-    padding: 15px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .header a {
     list-style: none;
     text-decoration: none;
-    color: rgb(243, 200, 80);
+    font-size: 1.3rem;
+    color: rgb(80, 216, 243);
     margin: 10px;
     padding: 10px;
 }
 
 .navbar h1 {
-    color: rgb(243, 200, 80);
+    color: rgb(9, 9, 9);
     float: left;
     font-size: 1.5rem;
     padding: 10px 10px 10px 10px;
@@ -287,7 +288,42 @@ footer{
     margin-top: 5%;
     width: 30%;
     height: 300px;
-    border: 1px solid white;
     gap: 10px;
 
+}
+.box4 h3{
+    font-size: 1.4rem;
+    margin-left: 30px;
+}
+.txt2 p {
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.links a,li{
+   text-decoration: none;
+   color: white;
+   list-style: none;
+   font-size: 1rem;
+   margin-left: 20px;
+   margin-top: 25px;
+}
+.links a:hover{
+    color: rgb(255, 217, 0);
+}
+.c-info p{
+    margin-top: 20px;
+
+}
+.c-info i{
+    margin-right: 10px;
+    color: rgb(255, 166, 0);
+}
+.share a{
+    margin-top: 110px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
 }
