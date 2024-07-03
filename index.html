@@ -10,16 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Typed.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
     <div id="main">
         <!--navbar section-->
         <div class="navbar">
-            <h1>Portfolio</h1>
+           <h1>Portfolio</h1>
             <nav>
                 <ul class="header">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Portfolio</a></li>
@@ -36,15 +40,12 @@
 
                     <h1 class="details">Hi There,</h1>
                     <h1 class="details">I'm Pratik <span style="color: rgb(250, 167, 43);">Jadhav </span></h1>
-                    <h4 class="details">I'm into the <span style="color: red;" class="typing-text"> web developer </span></h4>
+                    <h4 class="details">I'm into the <span id="typing-text"> </span></h4>
                 </div>
                 <div class="profile">
                     <img src="Assets/profile2.png" alt="profile img" width="700px" height="400px">
                 </div>
                 <div class="hero">
-                <video autoplay muted loop id="myVideo">
-                    <source src="Assets/hero-bg.mp4" type="video/mp4">
-                  </video></div>
             </div>
         </section>
 
@@ -195,6 +196,8 @@
         </section>
     </div>
     <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+    <script src="Assets/script.js"></script>
+    
 </body>
 
 </html>
