@@ -3,7 +3,7 @@
 <h2>Tech stack👨‍🏫</h2>
 <p>HTML | CSS | JavaScript</p>
 <h2>Sneak_peak🙈</h2>
-<a href="https://devloperpratikjadhav.github.io/Portfolio/">Visit Now🚀</a>
+<a href="https://pratikjadhav-portfolio.netlify.app/">Visit Now🚀</a>
 <img src="Assets/sneak-peak.png">
 
 <a href="mailto:pratikjadhav6632@gmail.com"> <h2>Email = Pratikjadhav6632@gmail.com</h2> </a>
