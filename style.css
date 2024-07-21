@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: scroll; /* Ensure vertical scrollbar is always visible */
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* Scrollbar styles for WebKit browsers */
@@ -37,343 +40,152 @@ body {
     scrollbar-width: thin;
     scrollbar-color: #007bff #e9ecef;
 }
-.content {
-    height: 150vh; /* Make content taller than the viewport */
-    padding: 20px;
-    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
-}
+
 /*Header*/
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 40px;
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
     height: 65px;
-    width: 100vw;
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 10;
 }
 
-.header {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin-right: 40px;
-  
-}
-
-ul.header {
-    list-style: none;
-    padding-bottom: 10px;
-}
-
-.header a {
-    list-style: none;
-    text-decoration: none;
+.navbar .nav-link {
     font-size: 1.6rem;
     font-weight: 800;
     color: rgb(29, 138, 255);
     margin: 10px;
     padding: 10px;
 }
+/* Navigation hover effect */
+.navbar .nav-item .nav-link:hover {
+    color: blue;
+}
 
-.navbar h1 {
-    color: rgb(9, 9, 9);
-    float: left;
+
+.navbar .navbar-brand {
     font-size: 1.5rem;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
 }
 
 /*Home*/
-.profile {
-    display: flex;
-    align-items: center;
-}
-
-.text h1 {
-    font-size: 3.6rem;
-    font-weight: 900;
-    margin: 10px;
-}
-
-.text h4 {
-    font-size: 1.3rem;
-    margin: 10px;
-}
-
-.text {
-    margin-left: 5%;
-
-}
-#typing-text{
-    color: red;
-}
-
+/* Hero Section */
+/* Hero Section */
 .Home {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    position: relative;
-    margin-top: 10vh;
-    height: 600px;
+    justify-content: center;
+    height: 100vh;
     background-color: white;
+}
+
+.Home .details {
+    font-size: 1.5rem; /* Smaller text size for details */
+    font-weight: bold;
+}
+
+.Home h1.details {
+    font-size: 3rem; /* Smaller font size for main heading */
+    margin: 10px 0;
+}
+
+.Home h4.details {
+    font-size: 1.8rem; /* Smaller font size for subheading */
+    margin: 10px 0;
+}
+
+.Home img {
+    width: 100%; /* Make image occupy full width of the container */
+    max-width: 600px; /* Adjust as needed to make the image larger */
+    height: auto;
 }
 
 
 /*About*/
-.heading {
-    margin-top: 10%;
-    height: 600px;
-    font-size: 1.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.head {
-    margin-left: 40%;
-}
-
-.about {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
-
-}
-
-.card {
-   
-    width: 20vw;
-    height: 65vh;
-    position: relative;
-    left: 10%;
-    background-image: url(Assets/1693235940616.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    border-radius: 20px;
-    box-shadow: 0px 10px 10px 0.5px rgb(129, 128, 128);
-}
-
-.p-info {
-    width: 30%;
-    font-size: 1.2rem;
-    display: grid;
-    gap: 5px;
-}
-
-.p-info a {
-    text-decoration: none;
-    color: black;
-}
-
-.btn {
-    width: 30%;
-    margin-top: 20px;
+#About .card {
     border: none;
-    border-radius: 8px;
-    background-color: blue;
-    color: white;
-    box-shadow: -5px 10px 5px 0.1px rgb(152, 152, 249);
-}
-
-.txt {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.txt:hover {
-    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(129, 128, 128, 0.5);
 }
 
 /*Skills and ability*/
 .skills {
-    width: 98.5%;
-    height: 650px;
-    padding: 10px;
     background: linear-gradient(to bottom, #57059e, #4a00e0);
+    color: white;
 }
 
-.skill {
-   
-    margin-left: 10%;
-    margin-top: 5%;
-    padding: 20px;
-    width: 80%;
-    height: 90%;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
+.skills .skill-card {
     background: rgba(0, 0, 22, 0.4);
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    flex-wrap: wrap;
-    gap: 1.8rem;
-    color: white;
-
-}
-
-.box {
-   
-    width: 200px;
-    height: 200px;
-    margin-top: 10px;
-    margin-left: 10%;
-    border: 1px solid black;
+    border: none;
     border-radius: 20px;
-    background-color: black;
-
+    transition: box-shadow 0.3s ease;
+    height: 100%;
 }
 
-.box:hover {
-    box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    ;
+.skills .skill-card:hover {
+    box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8);
 }
 
-.png {
-    margin: 30px 50px 30px 50px;
+.skills .skill-card img {
+    height: 150px;
+    object-fit: contain;
+    padding: 20px;
 }
 
-.title {
-    color: white;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+/*Projects*/
+.projects .card {
+    background: black;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
-.education{
-    height: 400px;
+
+.projects .card:hover {
+    transform: translateY(-10px);
 }
-.box2{
-    width: 70%;
-    height: 46%;
-    box-shadow: 0px 5px 10px 0.3px rgb(83, 81, 81);
-    margin-top: 20px;
-    margin-left: 15%;
-}
-.box2:hover{
-    box-shadow: 5px 5px 10px 0.3px rgb(83, 81, 81);
-}
-.s-img{
-    width: 200px;
-    height: 180px;
-}
-.ug{
-    display: flex;
-}
-.hsc{
-    display: flex;
-}
-.s-info{
-    font-size: 0.9rem;
-    margin-left: 20px;
-}
-.s-info h1{
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: #22045e;
-}
-.s-info p{
-    margin-top: 20px;
-    font-size: 1rem;
-}
-.s-info h5{
-    color: green;
-    margin-top: 20px;
-    font-size: 1.2rem;
-}
-.projects{
+
+.projects .card img {
+    height: 100%;
     width: 100%;
-    height: 600px;
-    background: linear-gradient(to bottom, #000031, #00002c);
-}
-.project{
-    margin-top: 3%;
-    display: grid;
-    grid-template-columns: repeat(2,0.4fr);
-    flex-wrap: wrap;
-    gap:2rem;
-    column-gap: 0.8rem;
-}
-.box3{
-    height: 230px;
-    width: 400px;
-    background-color: black;
-    margin-left: 40%;
+    object-fit: cover;
     border-radius: 8px;
 }
-.box3 img{
-    height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
-.box3 h2{
+
+.projects .card h5 {
     background-color: rgb(251, 206, 4);
-    width: 100%;
-    height: 40px;
-    position: relative;
-    bottom: 45px;
-    border-radius: 0px 0px 8px 8px;
-    font-size: 1.2rem;
+    border-radius: 0 0 8px 8px;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
 }
-.box3 a{
-    text-decoration: none;
+
+.card-t{
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    right: 1px;
 }
-footer{
-    height: 500px;
-    background-color:rgb(0, 1, 43) ;
+
+/*Footer*/
+.footer {
+    background-color: rgb(0, 1, 43);
     color: white;
 }
-.container{
-    margin-left: 10%;
-    display: flex;
-    justify-content: space-around;
-}
-.box4{
-    margin-top: 5%;
-    width: 30%;
-    height: 300px;
-    gap: 10px;
 
+.footer .text-white {
+    color: white !important;
 }
-.box4 h3{
-    font-size: 1.4rem;
-    margin-left: 30px;
+
+.footer .fa-2x {
+    margin: 10px;
 }
-.txt2 p {
-     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    margin-top: 20px;
-    margin-left: 20px;
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
-.links a,li{
-   text-decoration: none;
-   color: white;
-   list-style: none;
-   font-size: 1rem;
-   margin-left: 20px;
-   margin-top: 25px;
-}
-.links a:hover{
+
+.footer a:hover {
     color: rgb(255, 217, 0);
-}
-.c-info p{
-    margin-top: 20px;
-
-}
-.c-info i{
-    margin-right: 10px;
-    color: rgb(255, 166, 0);
-}
-.share a{
-    margin-top: 110px;
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 1.8rem;
 }
