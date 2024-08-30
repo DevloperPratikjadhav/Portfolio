@@ -7,7 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -58,6 +59,7 @@ body {
     margin: 10px;
     padding: 10px;
 }
+
 /* Navigation hover effect */
 .navbar .nav-item .nav-link:hover {
     color: blue;
@@ -81,23 +83,28 @@ body {
 }
 
 .Home .details {
-    font-size: 1.5rem; /* Smaller text size for details */
+    font-size: 1.5rem;
+    /* Smaller text size for details */
     font-weight: bold;
 }
 
 .Home h1.details {
-    font-size: 3rem; /* Smaller font size for main heading */
+    font-size: 3rem;
+    /* Smaller font size for main heading */
     margin: 10px 0;
 }
 
 .Home h4.details {
-    font-size: 1.8rem; /* Smaller font size for subheading */
+    font-size: 1.8rem;
+    /* Smaller font size for subheading */
     margin: 10px 0;
 }
 
 .Home img {
-    width: 100%; /* Make image occupy full width of the container */
-    max-width: 600px; /* Adjust as needed to make the image larger */
+    width: 100%;
+    /* Make image occupy full width of the container */
+    max-width: 600px;
+    /* Adjust as needed to make the image larger */
     height: auto;
 }
 
@@ -107,6 +114,19 @@ body {
     border: none;
     border-radius: 20px;
     box-shadow: 0 10px 10px rgba(129, 128, 128, 0.5);
+}
+
+.prof {
+    height: 500px;
+    width: 400px;
+    filter: grayscale(10)
+}
+
+.card-img-overlay {
+    width: 400px;
+}
+.bg-dark{
+    width: 400px;
 }
 
 /*Skills and ability*/
@@ -160,8 +180,8 @@ body {
     padding: 10px;
 }
 
-.card-t{
-    position:absolute;
+.card-t {
+    position: absolute;
     bottom: 0px;
     width: 100%;
     right: 1px;
